@@ -12,7 +12,7 @@ For binary outcomes, both the additive and ratio estimands (causal relative risk
 The latest development version can be installed directly from Github using devtools:
 ``` Ruby
 if (!require("devtools")) install.packages("devtools")
-install_github(repo="siyunyang/PSweight.sga")
+devtools::install_github(repo="siyunyang/PSweight.sga")
 library(PSweight.sga)
 ```
 # Link to Paper
