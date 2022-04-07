@@ -1,0 +1,39 @@
+Package: PSweight.sga
+Type: Package
+Title: PSweight.sga: Propensity Score Weighting for Causal Subgroup Analysis
+Version: 0.0.1
+Date: 2022-03-21
+Authors@R: c(person("Siyun","Yang", role = c("aut", "cre"),
+            email = "siyun.yang@duke.edu"),
+            person("Tianhui", "Zhou", role = "aut",
+            email = "tianhui.zhou@duke.edu"),
+            person("Fan", "Li", role = "ctb",
+            email = "fan.f.li@yale.edu"),
+            person("Laine", "Thomas", role = "ctb",
+            email="laine.thomas@duke.edu"),
+            person("Fan", "Li", role = "ctb",
+            email="fl35@duke.edu")
+            )
+Maintainer: Siyun Yang <siyun.yang@duke.edu>
+Description: Performs propensity score weighting for causal subgroup analysis of observational studies and randomized trials. Enables the estimation and inference of subgroup average causal effects with binary treatments using overlap weights (S-ATO), inverse probability of treatment weights (S-ATE), and average subgroup treatment effect among the treated weights (S-ATT). When the covariates and subgrouping variables are provided, this package allows to automatically perform the Post-LASSO to select important covariate-subgroup interactions and generate the Connect-S plot,  introduced in Yang et al. (2021) <https://doi.org/10.1002/sim.9029 >. For full population level inference, please refere to R package PSweight.
+Depends: R (>= 3.5.0)
+License: GPL (>= 2)
+URL: yourgit.com
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Suggests:
+    knitr,
+    testthat (>= 3.0.0),
+    rmarkdown
+Imports:
+    lme4,
+    nnet,
+    MASS,
+    ggplot2,
+    numDeriv,
+    PSweight,
+    glmnet,
+    rlang
+VignetteBuilder: knitr
+Config/testthat/edition: 3
